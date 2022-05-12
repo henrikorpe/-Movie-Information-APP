@@ -3,7 +3,7 @@ const haku = document.getElementById('haku4');
 const haku2 = document.getElementById('haku3');
 
 async function lataus(hae){
-    const osoite = `https://omdbapi.com/?s=${hae}&page=1&apikey=58be708`;
+    const osoite = `https://omdbapi.com/?s=${hae}&page=1&apikey=fc1fef96`;
     const vastaus = await fetch(`${osoite}`);
     const tieto = await vastaus.json();
     if(tieto.Response == "True") displayMovieList(tieto.Search);
@@ -50,7 +50,7 @@ function loadMovieDetails(){
         movie.addEventListener('click', async () => {
             haku.classList.add('hide-haku4');
             haku2.value = "";
-            const tulos = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=58be708`);
+            const tulos = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
             const tiedot = await tulos.json();
             displayMovieDetails(tiedot);
         });
