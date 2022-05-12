@@ -50,7 +50,7 @@ function loadMovieDetails(){
         movie.addEventListener('click', async () => {
             haku.classList.add('hide-haku4');
             haku2.value = "";
-            const tulos = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
+            const tulos = await fetch(`https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
             const tiedot = await tulos.json();
             displayMovieDetails(tiedot);
         });
