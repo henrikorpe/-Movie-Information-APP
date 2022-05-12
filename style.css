@@ -1,1 +1,315 @@
+:root {
+    --md-dark-color: #1d1d1d;
+    --dark-color: #171717;
+    --light-dark-color: #292929;
+    --yellow-color: #d4aa11;
+}
 
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.haku {
+    background-color: black;
+    height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.haku2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+}
+
+.nappi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: var(--yellow-color);
+}
+
+.haku2 h3 {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+
+.haku2 .kenttä {
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+    color: var(--light-dark-color);
+    width: 350px;
+}
+
+.haku4 {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+    z-index: 10;
+}
+
+.haku4 .haku4-item {
+    background-color: var(--light-dark-color);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--dark-color);
+    width: calc(350px - 8px);
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color 200ms ease;
+    -o-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
+}
+
+.haku4 .haku4-item:Hover {
+    background-color: black;
+}
+
+.haku4-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.kuva img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.tiedot h3 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.tiedot p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.haku4::-webkit-scrollbar {
+    width: 8px;
+}
+
+.haku4::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.haku4::-webkit-scrollbar-thumb {
+    background-color: var(--yellow-color);
+    outline: none;
+    border-radius: 10px;
+}
+
+.hide-haku4 {
+    display: none;
+}
+
+.tulos2 {
+    padding: 3rem 0;
+}
+
+.kuva2 img {
+    max-width: 300px;
+    margin: 0 auto;
+    border: 4px solid #fff;
+}
+
+.tiedot2 {
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.nimi {
+    font-size: 2rem;
+    color: var(--yellow-color);
+}
+
+.tiedot3 { 
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
+}
+
+.tiedot2 .julkaisu {
+    font-weight: 500;
+    color: black;
+}
+
+.tiedot2 .ikäraja {
+    background-color: var(--yellow-color);
+    padding: 0.4rem;
+    margin: 0 0.4rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.tiedot2 .kassari {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    color: black;
+}
+
+.tiedot2 .casti {
+    padding: 0.5rem;
+    margin: 1rem 0;
+    color: black;
+}
+
+.tiedot2 .genre {
+    background-color: var(--light-dark-color);
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 3px;
+    color: white;
+}
+
+.tiedot2 .juoni {
+    max-width: 400px;
+    margin: 1rem auto;
+    color: black;
+}
+
+.tiedot2 .kieli {
+    color: var(--yellow-color);
+    font-style: italic;
+}
+
+@media(max-width: 450px) {
+
+    .logo p {
+        font-size: 1.4rem;
+    }
+
+    .haku2 .kenttä {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+    }
+
+    .haku2 h3 {
+        font-size: 1.4rem;
+    }
+
+    .haku4 {
+        width: 90%;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+                transform: translateX(50%);
+    }
+
+    .haku4 .haku4-item {
+        width: 100%;
+    }
+
+    .tiedot3 {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
+
+@media(min-width: 800px) {
+
+    .haku2 {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+
+    .haku2 h3 {
+        margin-bottom: 0;
+    }
+
+    .tulos3 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tiedot2{
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .tiedot2 .tiedot3 {
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        padding-left: 0;
+    }
+
+    .tiedot2 .juoni {
+        margin-left: 0;
+    }
+
+    .tiedot2 .kassari {
+        padding-left: 0;
+        margin-left: 0;
+    }
+}
